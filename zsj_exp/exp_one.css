@@ -1,0 +1,155 @@
+.code-container {
+  resize: both;
+  margin: auto;
+  width: 80vw;
+  height: 80vh;
+  min-width: 420px;
+  min-height: 255px;
+  position: relative;
+  --glow-margin: 70px;
+  filter: drop-shadow(0 0 75px rgb(128 0 255 / 0.25));
+}
+
+input.sig {
+  content: "attr(content)";
+  position: absolute;
+  bottom: 90px;
+  right: 90px;
+  z-index: 999;
+  color: rgb(255 200 255 / 0.5);
+  text-shadow: 0 0 12px rebeccapurple;
+  letter-spacing: 0.1em;
+  width: calc(100% - 240px);
+  background: transparent;
+  border: none;
+  text-align: right;
+  letter-spacing: 0.1em;
+}
+
+.code-container::after {
+  content: "";
+  background: linear-gradient(
+    to right,
+    transparent,
+    black 25px,
+    black 110px
+  );
+  position: absolute;
+  top: 125px;
+  left: var(--glow-margin);
+  right: var(--glow-margin);
+  height: 4px;
+  display: block;
+  z-index: 90;
+  opacity: 0.5;
+}
+
+.glow-container {
+  /*position: absolute;*/
+  /*inset: 0;*/
+  display: grid;
+  z-index: 2;
+  pointer-events: none;
+  --glow: drop-shadow(0 0 1px violet);
+  filter: var(--glow) brightness(1.5) drop-shadow(0 0 10px violet);
+}
+
+.augs {
+  --aug-rect-l1: initial;
+  --aug-l1-width: 110px;
+  --aug-l1-height: 4px;
+  --aug-l-center: 57px;
+
+  --aug-rect-r1: initial;
+  --aug-r1-width: 100% - 125px - 50px;
+  --aug-r1-height: 4px;
+  --aug-r-center: 57px;
+
+  --aug-clip-tr1: initial;
+  --aug-tr1-alt-join-out: initial;
+  --aug-tr1: 17px;
+  --aug-clip-tr2: initial;
+  --aug-tr2: 17px;
+  --aug-tr-extend1: 50px;
+
+  --aug-round-tl1: initial;
+  --aug-tl1: 8px;
+  --aug-round-br1: initial;
+  --aug-br1: 8px;
+  margin: auto;
+  width: calc(100% - var(--glow-margin) * 2);
+  height: calc(100% - var(--glow-margin) * 2);
+}
+
+.glow-container .augs {
+  --aug-border: initial;
+  --aug-border-all: 2px;
+  --aug-border-bg: linear-gradient(to bottom left, rebeccapurple, orange);
+}
+
+section.augs {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  --aug-inlay: initial;
+  --aug-inlay-all: 2px;
+  --aug-inlay-opacity: 0.25;
+}
+section.augs::before {
+  filter: brightness(0.2) blur(10px);
+}
+
+
+
+input.title {
+  position: absolute;
+  top: 17px;
+  left: 120px;
+  width: calc(100% - 240px);
+  background: transparent;
+  color: rgb(255 200 255 / 0.5);
+  text-shadow: 0 0 12px rebeccapurple;
+  border: none;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+
+
+
+body {
+  display: grid;
+  min-height: 100vh;
+  width: 100vw;
+  --c: rgb(0 0 0 / 0.95);
+  --bgb: linear-gradient(var(--c), var(--c));
+  --bg: repeating-conic-gradient(
+    from 7.5deg at center center,
+    hsl(200, 100%, 0%) 0deg 15deg,
+    hsl(200, 100%, 60%) 10deg 30deg
+  );
+  background: var(--bgb), var(--bg), black;
+}
+
+* {
+  font: normal 1em sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.bg {
+  background: repeating-linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.03),
+      transparent 2px
+    ),
+    linear-gradient(to bottom, #200933 75%, #3d0b43);
+}
+
+
+
+
+
+
+
