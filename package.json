@@ -1,7 +1,10 @@
 {
-  "name": "shenzhen",
+  "name": "chongqing",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "serve": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
     "build": "vue-cli-service build",
