@@ -30,7 +30,8 @@
 
 <script>
     // import "./augmented-ui-main/aug-core.min.css"
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/augmented-ui@2/augmented-ui.min.css"></link>
+    // import 'augmented-ui/aug-core.min.css';
+    // <link rel='stylesheet' href='https://unpkg.com/augmented-ui@2.0.0/aug-core.min.css' />
    
 
     export default {
