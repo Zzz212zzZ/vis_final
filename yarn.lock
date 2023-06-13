@@ -3398,6 +3398,11 @@ atob@^2.1.2:
   resolved "https://registry.npm.taobao.org/atob/download/atob-2.1.2.tgz"
   integrity sha1-bZUX654DDSQ2ZmZR6GvZ9vE1M8k=
 
+augmented-ui@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmmirror.com/augmented-ui/-/augmented-ui-2.0.0.tgz"
+  integrity sha512-5hp6zqzNwn7mhhdgZq5kOqzK5el642ubKJNR++5Desou9RnMuxQ0MtCzxAu/dkoXn8wmQoqzwagGmVY4La7NjA==
+
 autoprefixer@^9.7.5:
   version "9.8.0"
   resolved "https://registry.npm.taobao.org/autoprefixer/download/autoprefixer-9.8.0.tgz?cache=0&sync_timestamp=1589691871477&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fautoprefixer%2Fdownload%2Fautoprefixer-9.8.0.tgz"

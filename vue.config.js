@@ -1,3 +1,12 @@
 module.exports = {
-    publicPath: './'
+    publicPath: './',
+    css: {
+        extract: false
+      },
+      productionSourceMap: false,
+      configureWebpack: {
+        optimization: {
+          minimize: false
+        }
+      }
 }

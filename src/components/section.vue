@@ -29,11 +29,9 @@
 </template>
 
 <script>
-    import "./augmented-ui-main/aug-core.min.css"
-    import "./augmented-ui-main/augmented-ui.css"
-    import "./augmented-ui-main/border-inlay-mixins.min.css"
-    import "./augmented-ui-main/region-mixins.min.css"
-    import "./augmented-ui-main/shape-mixins.min.css"
+    // import "./augmented-ui-main/aug-core.min.css"
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/augmented-ui@2/augmented-ui.min.css"></link>
+   
 
     export default {
         name: 'Section',
